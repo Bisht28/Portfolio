@@ -20,11 +20,11 @@ export default function Skills() {
     },
     {
       title: "Cloud & DevOps",
-      skills: ["Microsoft Azure", "Azure Functions", "Logic Apps", "Azure SQL", "CI/CD", "Git"],
+      skills: ["Microsoft Azure", "Azure Functions", "Azure SQL", "Git"],
     },
     {
-      title: "Microsoft Power Platform",
-      skills: ["Power Apps", "Power Automate", "Power BI", "Azure Integration", "Custom Solutions"],
+      title: "Tools & Platforms",
+      skills: ["Power BI", "Azure Integration", "Custom Solutions"],
     },
     {
       title: "Programming Languages",
