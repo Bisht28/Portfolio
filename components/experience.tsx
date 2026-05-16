@@ -60,13 +60,13 @@ export default function Experience() {
       technologies: ["Artificial Intelligence", "Agile Methodology", "SDLC", "Best Practices", "Team Collaboration"],
     },
     {
-      title: "Full Stack Developer Intern",
-      company: "Bharat Intern",
-      period: "Aug 2023 - Sept 2023",
+      title: "AI Engineer Trainee",
+      company: "NHMAS Solutions Pvt Ltd",
+      period: "Apr 2023 - Sep 2023",
       location: "Remote, India",
       description:
-        "Conducted extensive research on state-of-the-art AI techniques and emerging technologies, ensuring up-to-date knowledge. Assisted in the development of a chatbot system which elevated the results by 25%. Implemented an AI-based system that autonomously solves complex tasks by a reduced time of 15%.",
-      technologies: ["Full Stack Development", "AI", "Chatbot Development", "Research"],
+        "Contributed to the end-to-end development, training, and optimization of machine learning models for real-world AI applications, including extensive data cleaning, preprocessing, feature engineering, and performance evaluation using key statistical metrics to ensure accuracy, robustness, and efficiency. Collaborated with cross-functional teams on integrating and deploying AI solutions into production environments while working with Software Infrastructure and Python.",
+      technologies: ["Machine Learning", "Python", "Data Engineering", "Feature Engineering", "AI Deployment", "Software Infrastructure"],
     },
   ]
 

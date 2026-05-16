@@ -25,14 +25,13 @@ export default function About() {
 
           <div className="space-y-6 text-center">
             <p className="text-lg text-muted-foreground">
-              I'm a passionate Software Developer with experience in full-stack web development, cloud technologies, and
-              blockchain. Currently pursuing my B.Tech in Computer Science with specialization in Blockchain Technology
-              at SRM Institute of Science and Technology.
+              AI Engineer pursuing an M.Sc. in Web Engineering at Technische Universit&auml;t Chemnitz, with a B.Tech in
+              Computer Science (Blockchain) from SRM Institute of Science and Technology.
             </p>
             <p className="text-lg text-muted-foreground">
-              My approach combines technical expertise with a strong focus on creating efficient, scalable solutions. I
-              enjoy working with modern technologies like React, Node.js, and cloud platforms to build innovative
-              applications.
+              Experienced in full-stack development, Microsoft Copilot Studio Agents, and Microsoft Azure AI &amp; database
+              services. I design and build scalable REST APIs and AI-powered applications using OpenAI technologies,
+              focusing on secure, production-ready, and cloud-native solutions.
             </p>
 
             <div className="flex justify-center gap-4 pt-6">

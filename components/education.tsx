@@ -13,6 +13,12 @@ export default function Education() {
 
   const education = [
     {
+      degree: "M.Sc. in Web Engineering",
+      institution: "Technische Universit\u00E4t Chemnitz",
+      period: "Mar 2026 - Present",
+      description: "Currently pursuing Master's degree in Web Engineering.",
+    },
+    {
       degree: "B.Tech Computer Science w/s Blockchain Technology",
       institution: "SRM Institute of Science and Technology",
       period: "2021 - 2025",
