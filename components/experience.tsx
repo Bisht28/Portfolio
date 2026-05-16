@@ -15,7 +15,7 @@ export default function Experience() {
   const experiences = [
     {
       title: "AI Engineer",
-      company: "Nihilent Technologies",
+      company: "Nihilent",
       type: "Full-time",
       period: "Jun 2025 - Mar 2026",
       location: "Pune, India",
@@ -25,7 +25,7 @@ export default function Experience() {
     },
     {
       title: "Software Developer Trainee",
-      company: "Nihilent Technologies",
+      company: "Nihilent",
       period: "Oct 2024 - Jun 2025",
       location: "Pune, India",
       description:
