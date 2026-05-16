@@ -3,7 +3,6 @@
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Briefcase, Calendar, ChevronRight, MapPin } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export default function Experience() {
@@ -81,54 +80,51 @@ export default function Experience() {
         >
           <h2 className="section-title">Work Experience</h2>
 
-          <div className="max-w-4xl mx-auto space-y-12">
+          <div className="max-w-3xl mx-auto space-y-6">
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.08 }}
+                className="rounded-lg border border-border/30 bg-background/50 p-5"
               >
-                <Card className="border border-border/50 bg-card/50">
-                  <CardContent className="p-6">
-                    <div className="flex flex-col md:flex-row md:items-start gap-4">
-                      <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary">
-                        <Briefcase className="h-6 w-6" />
-                      </div>
+                <div className="flex flex-col md:flex-row md:items-start gap-3">
+                  <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/10 text-primary">
+                    <Briefcase className="h-4 w-4" />
+                  </div>
 
-                      <div className="flex-grow">
-                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                          <h3 className="text-xl font-semibold">{exp.title}</h3>
-                          <div className="flex items-center text-muted-foreground">
-                            <Calendar className="h-4 w-4 mr-1" />
-                            <span className="text-sm">{exp.period}</span>
-                          </div>
-                        </div>
-
-                        <div className="flex items-center justify-between mb-4">
-                          <div className="flex items-center text-primary">
-                            <ChevronRight className="h-4 w-4 mr-1" />
-                            <span className="font-medium">{exp.company}</span>
-                          </div>
-                          <div className="flex items-center text-muted-foreground">
-                            <MapPin className="h-4 w-4 mr-1" />
-                            <span className="text-sm">{exp.location}</span>
-                          </div>
-                        </div>
-
-                        <p className="text-muted-foreground mb-4">{exp.description}</p>
-
-                        <div className="flex flex-wrap gap-2">
-                          {exp.technologies.map((tech) => (
-                            <Badge key={tech} variant="secondary">
-                              {tech}
-                            </Badge>
-                          ))}
-                        </div>
+                  <div className="flex-grow">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-1">
+                      <h3 className="text-lg font-semibold">{exp.title}</h3>
+                      <div className="flex items-center text-muted-foreground">
+                        <Calendar className="h-3.5 w-3.5 mr-1" />
+                        <span className="text-xs">{exp.period}</span>
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
+
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center text-primary">
+                        <ChevronRight className="h-3.5 w-3.5 mr-1" />
+                        <span className="text-sm font-medium">{exp.company}</span>
+                      </div>
+                      <div className="flex items-center text-muted-foreground">
+                        <MapPin className="h-3.5 w-3.5 mr-1" />
+                        <span className="text-xs">{exp.location}</span>
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{exp.description}</p>
+
+                    <div className="flex flex-wrap gap-1.5">
+                      {exp.technologies.map((tech) => (
+                        <Badge key={tech} variant="secondary" className="text-xs px-2 py-0.5 font-normal">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </div>

@@ -9,10 +9,13 @@ const skills = [
   "Python (LLMs and RAG)",
   "Microsoft Azure (Cloud and AI)",
   "M365 Copilot Studio",
-  "Blockchain and Smart Contracts",
+  "Blockchain",
+  "Smart Contracts",
+  "OpenAI API",
   "JavaScript",
   "React.js",
   "Node.js",
+  "Express.js (REST APIs)",
   "MongoDB",
   "TensorFlow",
   "Git",
@@ -33,18 +36,18 @@ export default function About() {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* About Me Column */}
             <div>
               <h2 className="section-title text-left">About Me</h2>
 
-              <div className="space-y-6">
-                <p className="text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
                   AI Engineer pursuing an M.Sc. in Web Engineering at Technische
                   Universit&auml;t Chemnitz, with a B.Tech in Computer Science
                   (Blockchain) from SRM Institute of Science and Technology.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   Experienced in full-stack development, Microsoft Copilot
                   Studio Agents, and Microsoft Azure AI &amp; database services.
                   I design and build scalable REST APIs and AI-powered
@@ -52,12 +55,13 @@ export default function About() {
                   production-ready, and cloud-native solutions.
                 </p>
 
-                <div className="flex gap-4 pt-4">
-                  <Button asChild>
+                <div className="flex gap-3 pt-2">
+                  <Button size="sm" asChild>
                     <a href="#contact">Contact Me</a>
                   </Button>
                   <Button
                     variant="outline"
+                    size="sm"
                     className="flex items-center gap-2"
                     asChild
                   >
@@ -80,7 +84,7 @@ export default function About() {
                 Skills &amp; Technologies
               </h2>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap" style={{ rowGap: "14px", columnGap: "10px" }}>
                 {skills.map((skill, index) => (
                   <motion.span
                     key={skill}
@@ -89,8 +93,9 @@ export default function About() {
                       opacity: inView ? 1 : 0,
                       scale: inView ? 1 : 0.8,
                     }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                    className="inline-flex items-center rounded-full bg-[hsl(350,60%,80%)] px-5 py-2.5 text-sm font-medium text-[hsl(222,47%,11%)] transition-transform hover:scale-105"
+                    transition={{ duration: 0.3, delay: index * 0.04 }}
+                    className="inline-flex items-center rounded-full border border-[#3B82F6] bg-[#1E293B] text-[#E2E8F0] text-sm font-medium transition-colors hover:bg-[#253247]"
+                    style={{ padding: "8px 16px" }}
                   >
                     {skill}
                   </motion.span>

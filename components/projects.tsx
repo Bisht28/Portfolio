@@ -3,7 +3,6 @@
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Github } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
@@ -45,15 +44,15 @@ export default function Projects() {
     {
       title: "Shopping-Cart",
       description:
-        "Empowered a sleek, secure shopping cart for an e-commerce platform using the MERN stack. Built an intuitive interface, added customizable features, and created a scalable architecture to drive business growth by 20%. Delivered a user-friendly interface with customizable features to scale with business growth.",
+        "Empowered a sleek, secure shopping cart for an e-commerce platform using the MERN stack. Built an intuitive interface, added customizable features, and created a scalable architecture to drive business growth by 20%.",
       technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "E-commerce"],
       githubUrl: "https://github.com/Bisht28/Shopping-Cart",
     },
     {
       title: "Email-Validator",
       description:
-        "Constructed an email validator that ensures compliance with standard email conventions, boosting validation speed by 50%. Project can be applied to various scenarios requiring input validation, such as user registration, contact verification improving validation speed by 30%.",
-      technologies: ["JavaScript", "Validation", "Web Development", "User Registration"],
+        "Constructed an email validator that ensures compliance with standard email conventions, boosting validation speed by 50%. Applied to user registration, contact verification and input validation scenarios.",
+      technologies: ["JavaScript", "Validation", "Web Development"],
       githubUrl: "https://github.com/Bisht28/Email-Validator",
     },
   ]
@@ -69,37 +68,34 @@ export default function Projects() {
         >
           <h2 className="section-title">Featured Projects</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.08 }}
+                className="h-full flex flex-col rounded-lg border border-border/30 bg-card p-5"
               >
-                <Card className="h-full flex flex-col border border-border/50">
-                  <CardContent className="p-6 flex-grow flex flex-col">
-                    <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                    <p className="text-muted-foreground mb-6 flex-grow">{project.description}</p>
+                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">{project.description}</p>
 
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.technologies.map((tech) => (
-                        <Badge key={tech} variant="outline">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {project.technologies.map((tech) => (
+                    <Badge key={tech} variant="outline" className="text-xs px-2 py-0.5 font-normal">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
 
-                    <div className="mt-auto">
-                      <Button variant="outline" size="sm" className="flex items-center gap-2 w-full" asChild>
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4" />
-                          View Code
-                        </a>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div className="mt-auto">
+                  <Button variant="outline" size="sm" className="flex items-center gap-2 w-full text-xs" asChild>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-3.5 w-3.5" />
+                      View Code
+                    </a>
+                  </Button>
+                </div>
               </motion.div>
             ))}
           </div>
