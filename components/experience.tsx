@@ -42,7 +42,7 @@ export default function Experience() {
       technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful APIs", "AI Automation"],
     },
     {
-      title: "Web Development Intern",
+      title: "Software Engineer Intern",
       company: "Prodigy Infotech",
       period: "May 2024 - June 2024",
       location: "Remote, India",

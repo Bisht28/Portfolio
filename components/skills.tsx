@@ -24,7 +24,7 @@ export default function Skills() {
     },
     {
       title: "Tools & Platforms",
-      skills: ["Power BI", "Azure Integration", "Custom Solutions"],
+      skills: ["Power BI", "Azure Integration", "Custom Solutions", "M365 Copilot Studio"],
     },
     {
       title: "Programming Languages",
