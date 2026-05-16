@@ -1,7 +1,6 @@
 import Hero from "@/components/hero"
 import About from "@/components/about"
 import Experience from "@/components/experience"
-import Skills from "@/components/skills"
 import Projects from "@/components/projects"
 import Education from "@/components/education"
 import PublicationsCertifications from "@/components/publications-certifications"
@@ -13,7 +12,6 @@ export default function Home() {
     <main className="min-h-screen bg-background">
       <Hero />
       <About />
-      <Skills />
       <Experience />
       <Projects />
       <Education />
