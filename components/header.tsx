@@ -26,6 +26,7 @@ export default function Header() {
     { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
     { href: "#education", label: "Education" },
+    { href: "#publications", label: "Publications" },
     { href: "#contact", label: "Contact" },
   ]
 

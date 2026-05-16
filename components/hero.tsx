@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Hero() {
@@ -22,7 +22,7 @@ export default function Hero() {
           className="text-center max-w-3xl mx-auto"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">Aryan Bisht</h1>
-          <h2 className="text-xl md:text-2xl font-medium mb-8 text-muted-foreground">Software Developer</h2>
+          <h2 className="text-xl md:text-2xl font-medium mb-8 text-muted-foreground">AI Engineer</h2>
 
           <div className="flex items-center justify-center gap-6 mb-12">
             <Button variant="ghost" size="icon" asChild className="rounded-full">
@@ -45,11 +45,7 @@ export default function Hero() {
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild className="rounded-full">
-              <a href="tel:+919911163667" aria-label="Phone">
-                <Phone className="h-5 w-5" />
-              </a>
-            </Button>
+
           </div>
         </motion.div>
       </div>

@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, Linkedin } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -32,12 +32,10 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Create mailto link with form data
     const mailtoLink = `mailto:bisht.aryannn@gmail.com?subject=${encodeURIComponent(
       formData.subject,
     )}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
 
-    // Open email client
     window.location.href = mailtoLink
   }
 
@@ -56,8 +54,7 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
               <p className="text-muted-foreground mb-8">
-                Feel free to reach out if you have any questions or if you'd like to work together. I'm always open to
-                discussing new projects and opportunities.
+                {"Feel free to reach out if you have any questions or if you'd like to work together."}
               </p>
 
               <div className="space-y-6">
@@ -78,23 +75,18 @@ export default function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
-                    <Phone className="h-5 w-5" />
+                    <Linkedin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-medium">Phone</h4>
-                    <a href="tel:+919911163667" className="text-muted-foreground hover:text-primary transition-colors">
-                      +91 9911163667
+                    <h4 className="font-medium">LinkedIn</h4>
+                    <a
+                      href="https://linkedin.com/in/aryan-bisht-61573923a"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      linkedin.com/in/aryan-bisht-61573923a
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
-                    <MapPin className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Location</h4>
-                    <p className="text-muted-foreground">India</p>
                   </div>
                 </div>
               </div>
