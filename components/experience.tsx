@@ -14,9 +14,19 @@ export default function Experience() {
 
   const experiences = [
     {
+      title: "AI Engineer",
+      company: "Nihilent Technologies",
+      type: "Full-time",
+      period: "Jun 2025 - Mar 2026",
+      location: "Pune, India",
+      description:
+        "Led the architecture and delivery of a major Microsoft Copilot Studio Agents project as technical lead, designing and deploying enterprise-grade AI agents with multi-step orchestration, contextual reasoning, and secure data grounding across Microsoft 365 and enterprise systems. Integrated Azure AI services (Computer Vision, NLP, LLMs), designed Dataverse data models with robust security, and implemented data transformation workflows to optimize model performance and automate intelligent decision-making.",
+      technologies: ["Microsoft Copilot Studio", "Azure AI", "Computer Vision", "NLP", "LLMs", "Dataverse", "Microsoft 365"],
+    },
+    {
       title: "Software Developer Trainee",
       company: "Nihilent Technologies",
-      period: "Oct 2024 - July 2025",
+      period: "Oct 2024 - Jun 2025",
       location: "Pune, India",
       description:
         "Developed cloud-based solutions using Microsoft Azure, including Azure Functions, Logic Apps, and Azure SQL, to enhance automation and scalability. Designed and implemented custom applications using Microsoft Power Apps, optimizing business processes and improving operational efficiency. Integrated Power Platform tools such as Power Automate, Power BI, and Azure services to streamline workflows and enable data-driven decision-making.",
