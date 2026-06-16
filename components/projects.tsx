@@ -14,23 +14,23 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "TaxChain",
+      title: "DocuLens | Multilingual AI Document Intelligence Platform",
       description:
-        "A blockchain-based application designed to simplify tax-related processes for businesses. Built with JavaScript and Solidity to provide secure, transparent tax management on the blockchain.",
-      technologies: ["JavaScript", "Solidity", "CSS", "Blockchain", "Smart Contracts"],
-      githubUrl: "https://github.com/Bisht28/TaxChain",
+        "Built a multilingual document intelligence platform using FastAPI, React, ChromaDB, and LLMs for PDFs, images, and scanned documents. Developed a RAG pipeline with OCR, embeddings, and vector search for semantic retrieval and multilingual question answering. Engineered scalable document ingestion and knowledge extraction services for AI-powered interaction with unstructured data.",
+      technologies: ["FastAPI", "React", "ChromaDB", "LLMs", "RAG", "OCR"],
+      githubUrl: "https://github.com/Bisht28/DOCULENS",
     },
     {
-      title: "Car-Booking",
+      title: "German Accident Analytics AI Platform",
       description:
-        "A comprehensive car booking and carpooling platform that allows users to book rides or offer carpooling services. Features include user authentication, ride listings, and booking management.",
-      technologies: ["HTML", "CSS", "JavaScript", "Web Development", "UI/UX"],
-      githubUrl: "https://github.com/Bisht28/Car-Booking",
+        "Built a FastAPI, PostgreSQL, SQLAlchemy, and Alembic backend for German accident and regional data. Created ETL pipelines to ingest, clean, and unify accident, vehicle, population, and geospatial datasets. Designed an AI-ready data layer for analytics, predictive modeling, and future LLM/RAG applications.",
+      technologies: ["FastAPI", "PostgreSQL", "SQLAlchemy", "Alembic", "ETL", "Data Engineering"],
+      githubUrl: "https://github.com/Bisht28/accident-atlas-germany",
     },
     {
-      title: "QR-Generator",
+      title: "Dynamic Data-Encoder",
       description:
-        "A simple QR code generator that allows users to input a URL or text and generate a corresponding QR code. Features include generating QR codes for various inputs, downloading generated QR codes as images, and a responsive design for all devices.",
+        "A next-generation QR code generator that allows users to input a URL or text and generate a corresponding QR code. Features include generating QR codes for various inputs, downloading generated QR codes as images, and a responsive design for all devices.",
       technologies: ["JavaScript", "HTML", "CSS", "Web Development"],
       githubUrl: "https://github.com/Bisht28/Qr-Generator",
     },
@@ -42,16 +42,16 @@ export default function Projects() {
       githubUrl: "https://github.com/Bisht28/Dairy-Gradation-System",
     },
     {
-      title: "Shopping-Cart",
+      title: "Mobility-as-a-Service Platform",
       description:
-        "Empowered a sleek, secure shopping cart for an e-commerce platform using the MERN stack. Built an intuitive interface, added customizable features, and created a scalable architecture to drive business growth by 20%.",
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "E-commerce"],
-      githubUrl: "https://github.com/Bisht28/Shopping-Cart",
+        "A comprehensive car booking and carpooling platform that allows users to book rides or offer carpooling services. Features include user authentication, ride listings, and booking management with a responsive interface for seamless user experience.",
+      technologies: ["HTML", "CSS", "JavaScript", "Web Development", "UI/UX"],
+      githubUrl: "https://github.com/Bisht28/Car-Booking",
     },
     {
-      title: "Email-Validator",
+      title: "Syntax & Domain Validator",
       description:
-        "Constructed an email validator that ensures compliance with standard email conventions, boosting validation speed by 50%. Applied to user registration, contact verification and input validation scenarios.",
+        "An advanced email validator that ensures compliance with standard email conventions, boosting validation speed by 50%. Integrated into user registration, contact verification, and input validation scenarios for enhanced data quality.",
       technologies: ["JavaScript", "Validation", "Web Development"],
       githubUrl: "https://github.com/Bisht28/Email-Validator",
     },
