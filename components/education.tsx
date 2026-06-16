@@ -27,6 +27,11 @@ export default function Education() {
 
   const trainings = [
     {
+      title: "AI Skill Fest 2026",
+      institution: "Microsoft",
+      date: "Jun 2026",
+    },
+    {
       title: "AI Essential Comprehensive",
       institution: "appliedAI Institute for Europe gGmbH",
       date: "Oct 2025",

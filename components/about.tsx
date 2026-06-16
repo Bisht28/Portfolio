@@ -86,7 +86,7 @@ export default function About() {
                 Skills &amp; Technologies
               </h2>
 
-              <div className="flex flex-wrap" style={{ rowGap: "14px", columnGap: "10px" }}>
+              <div className="flex flex-wrap gap-[14px]">
                 {skills.map((skill, index) => (
                   <motion.span
                     key={skill}
@@ -96,8 +96,7 @@ export default function About() {
                       scale: inView ? 1 : 0.8,
                     }}
                     transition={{ duration: 0.3, delay: index * 0.04 }}
-                    className="inline-flex items-center rounded-full border border-[#3B82F6] bg-[#1E293B] text-[#E2E8F0] text-sm font-medium transition-colors hover:bg-[#253247]"
-                    style={{ padding: "8px 16px" }}
+                    className="inline-flex items-center rounded-full border border-blue-500 bg-slate-800 text-slate-100 px-4 py-2 text-sm font-medium transition-colors hover:bg-slate-700"
                   >
                     {skill}
                   </motion.span>
