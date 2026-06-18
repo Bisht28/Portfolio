@@ -44,7 +44,7 @@ export default function Education() {
   ]
 
   return (
-    <section id="education" className="bg-card">
+    <section id="education">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -65,10 +65,10 @@ export default function Education() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="rounded-lg border border-border/30 bg-background/50 p-4"
+                    className="rounded-xl p-4 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/10 text-primary">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
                         <GraduationCap className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">
@@ -98,10 +98,10 @@ export default function Education() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="rounded-lg border border-border/30 bg-background/50 p-4"
+                    className="rounded-xl p-4 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/10 text-primary">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
                         <BookOpen className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">

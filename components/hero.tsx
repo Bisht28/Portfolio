@@ -22,7 +22,7 @@ export default function Hero() {
           className="text-center max-w-3xl mx-auto"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">Aryan Bisht</h1>
-          <h2 className="text-xl md:text-2xl font-medium mb-8 text-muted-foreground">Full-Stack &amp; AI Engineer</h2>
+          <h2 className="text-xl md:text-2xl font-medium mb-8 text-white/85">Full-Stack &amp; AI Engineer</h2>
 
           <div className="flex items-center justify-center gap-6 mb-12">
             <Button variant="ghost" size="icon" asChild className="rounded-full">

@@ -30,7 +30,7 @@ export default function About() {
   })
 
   return (
-    <section id="about" className="bg-card">
+    <section id="about">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -96,7 +96,7 @@ export default function About() {
                       scale: inView ? 1 : 0.8,
                     }}
                     transition={{ duration: 0.3, delay: index * 0.04 }}
-                    className="inline-flex items-center rounded-full border border-blue-500 bg-slate-800 text-slate-100 px-4 py-2 text-sm font-medium transition-colors hover:bg-slate-700"
+                    className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium glassmorphic hover:glassmorphic-light transition-all duration-300 text-white/85"
                   >
                     {skill}
                   </motion.span>

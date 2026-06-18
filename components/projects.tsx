@@ -75,7 +75,7 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                 transition={{ duration: 0.6, delay: index * 0.08 }}
-                className="h-full flex flex-col rounded-lg border border-border/30 bg-card p-5"
+                className="h-full flex flex-col rounded-xl p-6 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group"
               >
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">{project.description}</p>

@@ -62,7 +62,7 @@ export default function Skills() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-card rounded-xl p-6 border border-border/50"
+                className="rounded-xl p-6 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5"
               >
                 <div className="mb-4">
                   <h3 className="text-xl font-semibold mb-4">{category.title}</h3>

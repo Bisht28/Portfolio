@@ -33,8 +33,9 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/80 backdrop-blur-md" : "bg-transparent"
+        isScrolled ? "glassmorphic-light" : "bg-transparent"
       }`}
+      style={isScrolled ? { borderBottom: "1px solid rgba(255,255,255,0.1)" } : {}}
     >
       <div className="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
