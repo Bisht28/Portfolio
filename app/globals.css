@@ -139,6 +139,31 @@
     background-clip: text;
   }
 
+  /* Text color utilities for better readability */
+  .text-body {
+    @apply text-slate-300;
+    color: #cbd5e1;
+  }
+
+  .text-muted {
+    @apply text-slate-400;
+    color: #94a3b8;
+  }
+
+  .text-bright {
+    @apply text-white;
+    color: #ffffff;
+  }
+
+  /* Card border brightness */
+  .glass-card {
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+  }
+
   .section-container {
     max-width: 72rem;
     margin: 0 auto;

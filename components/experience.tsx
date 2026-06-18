@@ -95,30 +95,30 @@ export default function Experience() {
                   </div>
 
                   <div className="flex-grow">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-1">
-                      <h3 className="text-lg font-semibold">{exp.title}</h3>
-                      <div className="flex items-center text-muted-foreground">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
+                      <h3 className="text-lg font-semibold text-white">{exp.title}</h3>
+                      <div className="flex items-center text-slate-400 text-xs whitespace-nowrap">
                         <Calendar className="h-3.5 w-3.5 mr-1" />
-                        <span className="text-xs">{exp.period}</span>
+                        <span>{exp.period}</span>
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between mb-3">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
                       <div className="flex items-center text-sky-400">
                         <ChevronRight className="h-3.5 w-3.5 mr-1" />
                         <span className="text-sm font-medium">{exp.company}</span>
                       </div>
-                      <div className="flex items-center text-muted-foreground">
+                      <div className="flex items-center text-slate-400 text-xs whitespace-nowrap">
                         <MapPin className="h-3.5 w-3.5 mr-1" />
-                        <span className="text-xs">{exp.location}</span>
+                        <span>{exp.location}</span>
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{exp.description}</p>
+                    <p className="text-sm text-slate-300 mb-3 leading-relaxed">{exp.description}</p>
 
                     <div className="flex flex-wrap gap-1.5">
                       {exp.technologies.map((tech) => (
-                        <Badge key={tech} variant="secondary" className="text-xs px-2 py-0.5 font-normal bg-slate-800/80 border-slate-600/40 text-slate-300">
+                        <Badge key={tech} variant="secondary" className="text-xs px-2 py-0.5 font-normal bg-slate-700/50 border-slate-600/60 text-slate-100">
                           {tech}
                         </Badge>
                       ))}

@@ -57,7 +57,7 @@ export default function Education() {
           <div className="max-w-3xl mx-auto space-y-12">
             {/* Education */}
             <div>
-              <h3 className="text-lg font-semibold mb-5 text-center text-muted-foreground">Education</h3>
+              <h3 className="text-lg font-semibold mb-5 text-center text-white">Education</h3>
               <div className="space-y-4">
                 {education.map((edu, index) => (
                   <motion.div
@@ -68,19 +68,19 @@ export default function Education() {
                     className="glass-card p-4"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-purple-500/20 text-purple-300 border border-purple-400/40">
                         <GraduationCap className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">
-                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-1">
-                          <h4 className="text-base font-semibold">{edu.degree}</h4>
-                          <div className="flex items-center text-muted-foreground">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-1 gap-2">
+                          <h4 className="text-base font-semibold text-white">{edu.degree}</h4>
+                          <div className="flex items-center text-slate-400 text-xs whitespace-nowrap">
                             <Calendar className="h-3.5 w-3.5 mr-1" />
-                            <span className="text-xs">{edu.period}</span>
+                            <span>{edu.period}</span>
                           </div>
                         </div>
-                        <div className="text-sky-400 text-sm font-medium mb-1">{edu.institution}</div>
-                        <p className="text-sm text-muted-foreground">{edu.description}</p>
+                        <div className="text-sky-300 text-sm font-medium mb-1">{edu.institution}</div>
+                        <p className="text-sm text-slate-300">{edu.description}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -90,7 +90,7 @@ export default function Education() {
 
             {/* Trainings */}
             <div>
-              <h3 className="text-lg font-semibold mb-5 text-center text-muted-foreground">Trainings</h3>
+              <h3 className="text-lg font-semibold mb-5 text-center text-white">Trainings</h3>
               <div className="space-y-3">
                 {trainings.map((training, index) => (
                   <motion.div
@@ -101,18 +101,18 @@ export default function Education() {
                     className="glass-card p-4"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-purple-500/20 text-purple-300 border border-purple-400/40">
                         <BookOpen className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">
-                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-1">
-                          <h4 className="text-base font-semibold">{training.title}</h4>
-                          <div className="flex items-center text-muted-foreground">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-1 gap-2">
+                          <h4 className="text-base font-semibold text-white">{training.title}</h4>
+                          <div className="flex items-center text-slate-400 text-xs whitespace-nowrap">
                             <Calendar className="h-3.5 w-3.5 mr-1" />
-                            <span className="text-xs">{training.date}</span>
+                            <span>{training.date}</span>
                           </div>
                         </div>
-                        <div className="text-sky-400 text-sm font-medium">{training.institution}</div>
+                        <div className="text-sky-300 text-sm font-medium">{training.institution}</div>
                       </div>
                     </div>
                   </motion.div>

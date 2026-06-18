@@ -41,15 +41,15 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* About Me Column */}
             <div>
-              <h2 className="section-title text-left">About Me</h2>
+              <h2 className="section-title">About Me</h2>
 
               <div className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-slate-300 leading-relaxed">
                   AI Engineer pursuing an M.Sc. in Web Engineering at Technische
                   Universit&auml;t Chemnitz, with a B.Tech in Computer Science
                   (Blockchain) from SRM Institute of Science and Technology.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-slate-300 leading-relaxed">
                   Experienced in full-stack development, Microsoft Copilot
                   Studio Agents, and Microsoft Azure AI &amp; database services.
                   I design and build scalable REST APIs and AI-powered
@@ -82,7 +82,7 @@ export default function About() {
 
             {/* Skills Column */}
             <div id="skills">
-              <h2 className="section-title text-left">
+              <h2 className="section-title">
                 Skills &amp; Technologies
               </h2>
 
@@ -96,7 +96,7 @@ export default function About() {
                       scale: inView ? 1 : 0.8,
                     }}
                     transition={{ duration: 0.3, delay: index * 0.04 }}
-                    className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 cursor-default bg-sky-500/10 border border-sky-500/20 text-sky-300 hover:bg-sky-500/20 hover:border-sky-400/40 hover:scale-105"
+                    className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 cursor-default bg-sky-500/20 border border-sky-400/40 text-white hover:bg-sky-500/30 hover:border-sky-300/60 hover:scale-105"
                   >
                     {skill}
                   </motion.span>

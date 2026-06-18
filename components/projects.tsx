@@ -77,12 +77,12 @@ export default function Projects() {
                 transition={{ duration: 0.6, delay: index * 0.08 }}
                 className="h-full flex flex-col glass-card p-5"
               >
-                <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">{project.description}</p>
+                <h3 className="text-lg font-semibold mb-2 text-white">{project.title}</h3>
+                <p className="text-sm text-slate-300 mb-4 flex-grow leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="outline" className="text-xs px-2 py-0.5 font-normal bg-indigo-500/10 border-indigo-500/20 text-indigo-300">
+                    <Badge key={tech} variant="outline" className="text-xs px-2 py-0.5 font-normal bg-indigo-500/20 border-indigo-400/40 text-white">
                       {tech}
                     </Badge>
                   ))}

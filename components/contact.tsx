@@ -22,32 +22,32 @@ export default function Contact() {
           <h2 className="section-title">Get In Touch</h2>
 
           <div className="max-w-md mx-auto space-y-4">
-            <div className="flex items-center gap-3 p-4 glass-card hover:border-sky-400/30">
-              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
+            <div className="flex items-center gap-3 p-4 glass-card hover:border-sky-400/40">
+              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/40">
                 <Mail className="h-4 w-4" />
               </div>
               <div>
-                <h4 className="text-sm font-medium mb-0.5">Email</h4>
+                <h4 className="text-sm font-medium mb-0.5 text-white">Email</h4>
                 <a
                   href="mailto:bisht.aryannn@gmail.com"
-                  className="text-sm text-muted-foreground hover:text-sky-400 transition-colors"
+                  className="text-sm text-slate-300 hover:text-sky-300 transition-colors"
                 >
                   bisht.aryannn@gmail.com
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 p-4 glass-card hover:border-sky-400/30">
-              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
+            <div className="flex items-center gap-3 p-4 glass-card hover:border-sky-400/40">
+              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/20 text-sky-300 border border-sky-400/40">
                 <Linkedin className="h-4 w-4" />
               </div>
               <div>
-                <h4 className="text-sm font-medium mb-0.5">LinkedIn</h4>
+                <h4 className="text-sm font-medium mb-0.5 text-white">LinkedIn</h4>
                 <a
                   href="https://linkedin.com/in/aryan-bisht-61573923a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-sky-400 transition-colors"
+                  className="text-sm text-slate-300 hover:text-sky-300 transition-colors"
                 >
                   linkedin.com/in/aryan-bisht-61573923a
                 </a>
