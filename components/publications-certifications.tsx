@@ -40,7 +40,7 @@ export default function PublicationsCertifications() {
   ]
 
   return (
-    <section id="publications">
+    <section id="publications" className="bg-transparent">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -61,10 +61,10 @@ export default function PublicationsCertifications() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="rounded-xl p-4 glassmorphic hover:glassmorphic-light transition-all duration-300"
+                    className="glass-card p-4"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
                         <BookOpen className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">
@@ -72,7 +72,7 @@ export default function PublicationsCertifications() {
                         <p className="text-sm text-muted-foreground mb-3">
                           {pub.publisher} &middot; {pub.date}
                         </p>
-                        <Button variant="outline" size="sm" className="text-xs" asChild>
+                        <Button variant="outline" size="sm" className="text-xs border-sky-500/30 text-sky-400 hover:bg-sky-500/10" asChild>
                           <a
                             href={pub.url}
                             target="_blank"
@@ -100,9 +100,9 @@ export default function PublicationsCertifications() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -20 }}
                     transition={{ duration: 0.4, delay: index * 0.08 }}
-                    className="flex items-center gap-3 p-3 rounded-xl glassmorphic hover:glassmorphic-light transition-all duration-300"
+                    className="flex items-center gap-3 p-3 glass-card hover:border-purple-400/30"
                   >
-                    <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/20 text-primary">
+                    <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
                       <Award className="h-4 w-4" />
                     </div>
                     <div>

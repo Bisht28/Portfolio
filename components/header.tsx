@@ -31,12 +31,7 @@ export default function Header() {
   ]
 
   return (
-    <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glassmorphic-light" : "bg-transparent"
-      }`}
-      style={isScrolled ? { borderBottom: "1px solid rgba(255,255,255,0.1)" } : {}}
-    >
+    <header className="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-[rgba(10,14,26,0.7)] border-b border-white/5">
       <div className="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
           Aryan Bisht
@@ -48,12 +43,12 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-sky-400 transition-colors"
             >
               {link.label}
             </Link>
           ))}
-          <Button variant="outline" size="sm" className="flex items-center gap-1" asChild>
+          <Button variant="outline" size="sm" className="flex items-center gap-1 border-sky-500/40 text-sky-400 hover:bg-sky-500/10" asChild>
             <a
               href="https://drive.google.com/file/d/1V35hVwCepvEB3oDTb3Mxdx63PBJPoZ9-/view?usp=drivesdk"
               target="_blank"
@@ -81,13 +76,13 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium py-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm font-medium py-2 text-muted-foreground hover:text-sky-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
-            <Button variant="outline" size="sm" className="flex items-center gap-1 w-full justify-center" asChild>
+            <Button variant="outline" size="sm" className="flex items-center gap-1 w-full justify-center border-sky-500/40 text-sky-400 hover:bg-sky-500/10" asChild>
               <a
                 href="https://drive.google.com/file/d/1V35hVwCepvEB3oDTb3Mxdx63PBJPoZ9-/view?usp=drivesdk"
                 target="_blank"

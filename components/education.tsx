@@ -44,7 +44,7 @@ export default function Education() {
   ]
 
   return (
-    <section id="education">
+    <section id="education" className="bg-transparent">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -65,10 +65,10 @@ export default function Education() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="rounded-xl p-4 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5"
+                    className="glass-card p-4"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
                         <GraduationCap className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">
@@ -79,7 +79,7 @@ export default function Education() {
                             <span className="text-xs">{edu.period}</span>
                           </div>
                         </div>
-                        <div className="text-primary text-sm font-medium mb-1">{edu.institution}</div>
+                        <div className="text-sky-400 text-sm font-medium mb-1">{edu.institution}</div>
                         <p className="text-sm text-muted-foreground">{edu.description}</p>
                       </div>
                     </div>
@@ -98,10 +98,10 @@ export default function Education() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="rounded-xl p-4 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5"
+                    className="glass-card p-4"
                   >
                     <div className="flex flex-col md:flex-row gap-3">
-                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
+                      <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
                         <BookOpen className="h-4 w-4" />
                       </div>
                       <div className="flex-grow">
@@ -112,7 +112,7 @@ export default function Education() {
                             <span className="text-xs">{training.date}</span>
                           </div>
                         </div>
-                        <div className="text-primary text-sm font-medium">{training.institution}</div>
+                        <div className="text-sky-400 text-sm font-medium">{training.institution}</div>
                       </div>
                     </div>
                   </motion.div>

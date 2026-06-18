@@ -11,7 +11,7 @@ export default function Contact() {
   })
 
   return (
-    <section id="contact">
+    <section id="contact" className="bg-transparent">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -22,23 +22,23 @@ export default function Contact() {
           <h2 className="section-title">Get In Touch</h2>
 
           <div className="max-w-md mx-auto space-y-4">
-            <div className="flex items-center gap-3 p-4 rounded-xl glassmorphic hover:glassmorphic-light transition-all duration-300">
-              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
+            <div className="flex items-center gap-3 p-4 glass-card hover:border-sky-400/30">
+              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
                 <Mail className="h-4 w-4" />
               </div>
               <div>
                 <h4 className="text-sm font-medium mb-0.5">Email</h4>
                 <a
                   href="mailto:bisht.aryannn@gmail.com"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-sky-400 transition-colors"
                 >
                   bisht.aryannn@gmail.com
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-3 p-4 rounded-xl glassmorphic hover:glassmorphic-light transition-all duration-300">
-              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-primary/20 text-primary">
+            <div className="flex items-center gap-3 p-4 glass-card hover:border-sky-400/30">
+              <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">
                 <Linkedin className="h-4 w-4" />
               </div>
               <div>
@@ -47,7 +47,7 @@ export default function Contact() {
                   href="https://linkedin.com/in/aryan-bisht-61573923a"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm text-muted-foreground hover:text-sky-400 transition-colors"
                 >
                   linkedin.com/in/aryan-bisht-61573923a
                 </a>

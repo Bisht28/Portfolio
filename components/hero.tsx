@@ -14,6 +14,9 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(56,189,248,0.08)_0%,transparent_70%)]" />
+      </div>
       <div className="container mx-auto px-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,15 +25,15 @@ export default function Hero() {
           className="text-center max-w-3xl mx-auto"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">Aryan Bisht</h1>
-          <h2 className="text-xl md:text-2xl font-medium mb-8 text-white/85">Full-Stack &amp; AI Engineer</h2>
+          <h2 className="text-xl md:text-2xl font-medium mb-8 text-slate-400">Full-Stack &amp; AI Engineer</h2>
 
           <div className="flex items-center justify-center gap-6 mb-12">
-            <Button variant="ghost" size="icon" asChild className="rounded-full">
+            <Button variant="ghost" size="icon" asChild className="rounded-full border border-white/10 hover:border-sky-400/50 hover:text-sky-400 hover:bg-sky-400/10 transition-all duration-300">
               <a href="https://github.com/Bisht28" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild className="rounded-full">
+            <Button variant="ghost" size="icon" asChild className="rounded-full border border-white/10 hover:border-sky-400/50 hover:text-sky-400 hover:bg-sky-400/10 transition-all duration-300">
               <a
                 href="https://linkedin.com/in/aryan-bisht-61573923a"
                 target="_blank"
@@ -40,7 +43,7 @@ export default function Hero() {
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
-            <Button variant="ghost" size="icon" asChild className="rounded-full">
+            <Button variant="ghost" size="icon" asChild className="rounded-full border border-white/10 hover:border-sky-400/50 hover:text-sky-400 hover:bg-sky-400/10 transition-all duration-300">
               <a href="mailto:bisht.aryannn@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>

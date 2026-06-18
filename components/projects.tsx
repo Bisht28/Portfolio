@@ -58,7 +58,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects">
+    <section id="projects" className="bg-transparent">
       <div className="section-container">
         <motion.div
           ref={ref}
@@ -75,21 +75,21 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                 transition={{ duration: 0.6, delay: index * 0.08 }}
-                className="h-full flex flex-col rounded-xl p-6 glassmorphic hover:glassmorphic-light transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group"
+                className="h-full flex flex-col glass-card p-5"
               >
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm text-muted-foreground mb-4 flex-grow leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="outline" className="text-xs px-2 py-0.5 font-normal">
+                    <Badge key={tech} variant="outline" className="text-xs px-2 py-0.5 font-normal bg-indigo-500/10 border-indigo-500/20 text-indigo-300">
                       {tech}
                     </Badge>
                   ))}
                 </div>
 
                 <div className="mt-auto">
-                  <Button variant="outline" size="sm" className="flex items-center gap-2 w-full text-xs" asChild>
+                  <Button variant="outline" size="sm" className="flex items-center gap-2 w-full text-xs border-sky-500/30 text-sky-400 hover:bg-sky-500/10 hover:border-sky-400/50" asChild>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-3.5 w-3.5" />
                       View Code
