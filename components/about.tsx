@@ -3,7 +3,7 @@
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { FileText } from "lucide-react"
+import { FileText, User } from "lucide-react"
 
 const skills = [
   "Python (LLMs and RAG)",
@@ -38,10 +38,13 @@ export default function About() {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* About Me Column */}
+          <div className="space-y-12">
+            {/* About Me Section */}
             <div>
-              <h2 className="section-title">About Me</h2>
+              <div className="flex items-center gap-3 mb-6">
+                <User className="h-6 w-6 text-sky-400" />
+                <h2 className="text-3xl font-bold text-white">About Me</h2>
+              </div>
 
               <div className="space-y-4">
                 <p className="text-slate-300 leading-relaxed">
@@ -80,11 +83,11 @@ export default function About() {
               </div>
             </div>
 
-            {/* Skills Column */}
+            {/* Skills Section */}
             <div id="skills">
-              <h2 className="section-title">
-                Skills &amp; Technologies
-              </h2>
+              <div className="mb-6">
+                <h3 className="text-3xl font-bold text-white">Skills</h3>
+              </div>
 
               <div className="flex flex-wrap gap-[14px]">
                 {skills.map((skill, index) => (
@@ -96,7 +99,7 @@ export default function About() {
                       scale: inView ? 1 : 0.8,
                     }}
                     transition={{ duration: 0.3, delay: index * 0.04 }}
-                    className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 cursor-default bg-sky-500/20 border border-sky-400/40 text-white hover:bg-sky-500/30 hover:border-sky-300/60 hover:scale-105"
+                    className="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 cursor-default bg-blue-600 border border-blue-500 text-white hover:bg-blue-700 hover:scale-105"
                   >
                     {skill}
                   </motion.span>

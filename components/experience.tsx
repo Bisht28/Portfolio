@@ -78,7 +78,10 @@ export default function Experience() {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Work Experience</h2>
+          <div className="flex items-center gap-3 mb-8">
+            <Briefcase className="h-7 w-7 text-sky-400" />
+            <h2 className="text-3xl font-bold text-white">Professional Experience</h2>
+          </div>
 
           <div className="max-w-3xl mx-auto space-y-6">
             {experiences.map((exp, index) => (

@@ -2,7 +2,7 @@
 
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
-import { Github } from "lucide-react"
+import { Github, Code2 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
@@ -66,7 +66,10 @@ export default function Projects() {
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Featured Projects</h2>
+          <div className="flex items-center gap-3 mb-8">
+            <Code2 className="h-7 w-7 text-sky-400" />
+            <h2 className="text-3xl font-bold text-white">Projects</h2>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {projects.map((project, index) => (
